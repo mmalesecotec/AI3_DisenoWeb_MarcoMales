@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         !filter_var($correo, FILTER_VALIDATE_EMAIL) ||
         $carrera === "" ||
         $semestre === false ||
+        $semestre === null ||
         $semestre < 1 ||
         $semestre > 10
     ) {

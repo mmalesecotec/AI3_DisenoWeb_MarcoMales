@@ -8,24 +8,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
+    <div class="pagina-inicio">
+    <header class="encabezado-inicio">
     <h1>Sistema de Registro de Estudiantes</h1>
 
     <p>Bienvenido al sistema de gestión de estudiantes.</p>
-
+    </header>
     <h2>Opciones del sistema</h2>
-
-    <ul>
-        <li>Registrar estudiantes</li>
-        <li><a href="listar_estudiantes.php">Consultar estudiantes</a></li>
-        <li>Actualizar estudiantes</li>
-        <li>Eliminar estudiantes</li>
-    </ul>
+    <nav class="menu-inicio">
+        <a href="#registro">Registrar estudiantes</a>
+        <a href="listar_estudiantes.php">Gestionar estudiantes</a>
+    </nav>
 
     <hr>
-    <h2>Registrar nuevo estudiante</h2>
+    <section class="formulario-inicio">
+    <h2 id="registro">Registrar nuevo estudiante</h2>
     <!-- Formulario ingreso de datos -->
     <form action="guardar_estudiante.php" method="POST"> <!-- pasar los datos a este archivo -->
 
@@ -52,7 +52,8 @@
 
         <button type="submit">Guardar estudiante</button>
     </form> <!-- Fin Formulario ingreso de datos -->
-
+    </section>
+    </div>
 
 </body>
 </html>

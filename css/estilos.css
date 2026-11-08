@@ -57,3 +57,95 @@ tr:hover {
         font-size: 13px;
     }
 }
+/* Botón regresar al menú principal */
+.btn-volver {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+    background-color: #194d7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn-volver:hover {
+    background-color: #123858;
+}
+
+/* Diseño página principal */
+.pagina-inicio {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.encabezado-inicio {
+    background-color: #194d7a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.encabezado-inicio h1 {
+    margin: 0 0 12px;
+}
+
+.menu-inicio {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.menu-inicio a {
+    background-color: #194d7a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.menu-inicio a:hover {
+    background-color: #123858;
+}
+
+.formulario-inicio {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.formulario-inicio label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.formulario-inicio input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.formulario-inicio button {
+    background-color: #194d7a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario-inicio button:hover {
+    background-color: #123858;
+}
+/* Color título principal */
+.encabezado-inicio h1 {
+    color: #ffffff;
+}

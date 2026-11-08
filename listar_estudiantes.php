@@ -20,6 +20,9 @@ $listaEstudiantes = $estudiante->listar(); /* método listar() de la clase Estud
 <body>
 
     <h1>Listado de estudiantes registrados</h1>
+    <a href="index.php" class="btn-volver">
+    ← Volver al menú principal
+    </a>
     <div class="tabla-contenedor">
     <table>
         <thead>
