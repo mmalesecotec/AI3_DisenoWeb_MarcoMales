@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    color: #263238;
+}
+
+/* Título */
+h1 {
+    color: #174a78;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contenedor responsivo de la tabla */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Tabla-estudiantes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #174a78;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+tr:hover {
+    background-color: #e3effa;
+}
+
+/* Adaptación-pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}

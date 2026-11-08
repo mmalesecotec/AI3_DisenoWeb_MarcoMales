@@ -19,7 +19,7 @@
 
     <ul>
         <li>Registrar estudiantes</li>
-        <li>Consultar estudiantes</li>
+        <li><a href="listar_estudiantes.php">Consultar estudiantes</a></li>
         <li>Actualizar estudiantes</li>
         <li>Eliminar estudiantes</li>
     </ul>
