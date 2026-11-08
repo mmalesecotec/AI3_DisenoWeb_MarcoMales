@@ -1,0 +1,22 @@
+# Errores
+*.log
+logs/
+# Temporales
+*.tmp
+*.temp
+*.bak
+# Archivos Temporales
+.env
+.env.*
+!.env.example
+# Dependencias
+/vendor/
+/node_modules/
+# Configuración locl de editores
+.vscode/
+.idea/
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+# Configuración privada de la base de datos
+/config/database.php

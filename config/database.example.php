@@ -1,6 +1,5 @@
-
 <?php
-/* Configuración base de datos*/
+/* Configuración de ejemplo para MySQL */
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'db_sistema_web');
