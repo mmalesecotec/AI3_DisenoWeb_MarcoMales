@@ -41,6 +41,18 @@ class Estudiante {/* define el modelo que gestionara los estudiantes */
         return $consulta->fetchAll();
     }  /* Fin Consultar todos los estudiantes */
 
+    /* Buscar estudiante por su ID */
+    public function obtenerPorId($id) {
+    $sql = "SELECT * FROM estudiantes WHERE id = :id";
+    $consulta = $this->conexion->prepare($sql);
+    $consulta->execute([
+        ':id' => $id
+    ]);
+
+    return $consulta->fetch();
+    }
+    /* Fin buscar estudiante por ID */
+
     /* Actualizar datos del estudiante */
     public function actualizar($id, $nombre, $apellido, $correo, $carrera, $semestre) {
         /* indica que modificaremos una fila */

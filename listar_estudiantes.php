@@ -30,6 +30,7 @@ $listaEstudiantes = $estudiante->listar(); /* método listar() de la clase Estud
                 <th>Correo</th>
                 <th>Carrera</th>
                 <th>Semestre</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -41,6 +42,26 @@ $listaEstudiantes = $estudiante->listar(); /* método listar() de la clase Estud
                     <td><?= htmlspecialchars($fila['correo'], ENT_QUOTES, 'UTF-8') ?></td>
                     <td><?= htmlspecialchars($fila['carrera'], ENT_QUOTES, 'UTF-8') ?></td>
                     <td><?= htmlspecialchars((string)$fila['semestre'], ENT_QUOTES, 'UTF-8') ?></td>
+                    
+                    <td> <!-- Botonera Editar, Eliminar -->
+                        <a href="editar_estudiante.php?id=<?= urlencode((string)$fila['id']) ?>">
+                        Editar
+                        </a>
+
+                     |
+
+                    <form action="eliminar_estudiante.php"
+                    method="POST"
+                    style="display:inline;"
+                    onsubmit="return confirm('¿Está seguro de eliminar este estudiante?');">
+
+                    <input type="hidden" name="id"
+                    value="<?= (int)$fila['id'] ?>">
+
+                    <button type="submit">Eliminar</button>
+                    </form>
+                    </td> <!-- Fin Botonera Editar, Eliminar -->
+
                 </tr>
             <?php endforeach; ?>
         </tbody>
